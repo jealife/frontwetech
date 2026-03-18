@@ -15,7 +15,7 @@ export function HeroSection({ eyebrow, title, desc, image, icons }: {
             <h1 className="hero__title text-6xl" dangerouslySetInnerHTML={{ __html: title }}></h1>
             <p className="hero__desc text-xl">{desc}</p>
             <div className="hero__actions">
-              <a href="#solutions" className="btn btn--primary btn--large">Nos solutions</a>
+              <a href="/solutions" className="btn btn--primary btn--large">Nos solutions</a>
               <a href="/catalogue" className="btn btn--secondary btn--large">Voir le catalogue</a>
             </div>
           </div>

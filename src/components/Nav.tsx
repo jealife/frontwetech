@@ -18,7 +18,7 @@ export function Nav({ currentPath }: { currentPath: string }) {
         <div className="globalNav__inner">
           <a href="/" className="topBrand">
             <img 
-              src="/images/logo.png" 
+              src="/images/Logo.png" 
               alt="DB Tech Innovation" 
               className="topBrand__logo"
               style={{ height: '64px', width: 'auto', objectFit: 'contain' }}
@@ -29,8 +29,10 @@ export function Nav({ currentPath }: { currentPath: string }) {
             <a href="/" className={`globalNav__link ${currentPath === '/' ? 'is-active' : ''}`} onClick={() => setIsOpen(false)}>Accueil</a>
             <a href="/catalogue" className={`globalNav__link ${currentPath === '/catalogue' ? 'is-active' : ''}`} onClick={() => setIsOpen(false)}>Catalogue</a>
             <a href="/solutions" className={`globalNav__link ${currentPath === '/solutions' ? 'is-active' : ''}`} onClick={() => setIsOpen(false)}>Solutions</a>
+            <a href="/contact" className={`globalNav__link ${currentPath === '/contact' ? 'is-active' : ''}`} onClick={() => setIsOpen(false)}>Contact</a>
+            
             <div className="mobile-only" style={{ marginTop: '20px' }}>
-              <a href="mailto:services@dbtech-innovation.com" className="btn btn--primary" style={{ width: '100%' }}>
+              <a href="/contact" className="btn btn--primary" style={{ width: '100%' }} onClick={() => setIsOpen(false)}>
                 Nous contacter
               </a>
             </div>
@@ -38,7 +40,7 @@ export function Nav({ currentPath }: { currentPath: string }) {
 
           <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
             <div className="globalNav__actions">
-              <a href="mailto:services@dbtech-innovation.com" className="btn btn--primary">
+              <a href="/contact" className="btn btn--primary">
                 Nous contacter
               </a>
             </div>

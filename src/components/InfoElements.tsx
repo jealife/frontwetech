@@ -34,15 +34,12 @@ export function HighlightStrip({ label, items }: { label: string; items: string[
           {items.map((item, i) => (
             <div 
               key={item} 
-              className="reveal scale-in" 
+              className="reveal scale-in glass-panel" 
               style={{ 
-                background: 'white', 
-                border: '1px solid var(--line-soft)', 
                 padding: '32px 24px', 
                 borderRadius: '28px', 
                 fontWeight: 700, 
                 color: 'var(--ink)', 
-                boxShadow: 'var(--shadow-sm)', 
                 transition: 'all 0.4s var(--ease)', 
                 cursor: 'default', 
                 display: 'flex', 

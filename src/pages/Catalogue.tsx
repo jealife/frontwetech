@@ -50,7 +50,7 @@ export function Catalogue() {
               </div>
               <div className="grid-3" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(350px, 1fr))', gap: '32px' }}>
                 {items.map((item, idx) => (
-                  <div key={idx} className="reveal card" style={{ display: 'flex', flexDirection: 'column', height: '100%', borderRadius: '24px', overflow: 'hidden', background: 'white', border: '1px solid var(--line-soft)' }}>
+                  <div key={idx} className="reveal card glass-panel" style={{ display: 'flex', flexDirection: 'column', height: '100%', borderRadius: '24px', overflow: 'hidden' }}>
                     {item.img && (
                       <div style={{ height: '200px', overflow: 'hidden', position: 'relative' }}>
                         <img src={item.img} alt={item.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />

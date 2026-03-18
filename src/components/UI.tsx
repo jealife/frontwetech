@@ -31,7 +31,7 @@ export function FeatureCard({ icon, title, desc }: { icon: React.ReactNode; titl
   );
 }
 
-export function CTASection({ title, desc, btnText = "Demander un devis", link = "mailto:services@dbtech-innovation.com" }: { 
+export function CTASection({ title, desc, btnText = "Demander un devis", link = "/contact" }: { 
   title: string; 
   desc: string; 
   btnText?: string;

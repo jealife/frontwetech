@@ -4,6 +4,7 @@ import { Footer } from './components/Footer';
 import { Home } from './pages/Home';
 import { Catalogue } from './pages/Catalogue';
 import { Solutions } from './pages/Solutions';
+import { Contact } from './pages/Contact';
 import { attachReveal } from './ui/reveal';
 
 import { FloatingActions } from './components/FloatingActions';
@@ -49,6 +50,7 @@ export default function App() {
   let Page = Home;
   if (path === '/catalogue') Page = Catalogue;
   if (path === '/solutions') Page = Solutions;
+  if (path === '/contact') Page = Contact;
 
   return (
     <div className="app-root">

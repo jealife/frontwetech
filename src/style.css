@@ -61,7 +61,12 @@ html {
 
 body {
   font-family: var(--font-main);
-  background-color: var(--bg-white);
+  background-color: var(--bg-soft);
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(var(--primary-rgb), 0.06) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(var(--accent-rgb), 0.06) 0px, transparent 50%),
+    radial-gradient(at 50% 50%, rgba(var(--primary-rgb), 0.03) 0px, transparent 100%);
+  background-attachment: fixed;
   color: var(--ink);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -148,9 +153,10 @@ img {
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--line-soft);
+  background-color: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
   transition: all 0.3s var(--ease);
 }
 
@@ -197,7 +203,9 @@ img {
     right: 0; /* Changed from left: 0 to right: 0 */
     width: 100%;
     height: calc(100vh - 100px);
-    background: white;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
     flex-direction: column;
     padding: 40px;
     gap: 32px;
@@ -426,10 +434,13 @@ img {
 
 .hero__floating-card {
   position: absolute;
-  background: white;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
   padding: 20px;
   border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-xl);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.08); /* Glass shadow */
   display: flex;
   align-items: center;
   gap: 16px;
@@ -510,17 +521,21 @@ section {
 }
 
 .card {
-  background: white;
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   padding: 32px;
   border-radius: var(--radius-lg);
-  border: 1px solid var(--line-soft);
+  border: 1px solid rgba(255, 255, 255, 0.8);
   transition: all 0.3s var(--ease);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.04);
 }
 
 .card:hover {
-  border-color: var(--primary);
+  background: rgba(255, 255, 255, 0.85);
+  border-color: rgba(var(--primary-rgb), 0.3);
   transform: translateY(-8px);
-  box-shadow: var(--shadow-lg);
+  box-shadow: 0 12px 40px rgba(31, 38, 135, 0.08);
 }
 
 .card__icon {
@@ -629,12 +644,15 @@ section {
 }
 
 .cta-box {
-  background-color: var(--primary);
+  background: linear-gradient(135deg, rgba(var(--primary-rgb), 0.85), rgba(var(--primary-rgb), 0.95));
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: var(--radius-xl);
   padding: 80px 40px;
   text-align: center;
   color: white;
-  box-shadow: var(--shadow-xl);
+  box-shadow: 0 12px 40px rgba(var(--primary-rgb), 0.25);
 }
 
 .cta-box h2 {
@@ -669,6 +687,23 @@ section {
 }
 
 .bg-soft { background-color: var(--bg-soft); }
+
+/* Glass Utilities */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.65) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.8) !important;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.04) !important;
+}
+
+.glass-panel-dark {
+  background: rgba(15, 23, 42, 0.65) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3) !important;
+}
 
 /* Animation Keyframes */
 @keyframes fadeInUp {
