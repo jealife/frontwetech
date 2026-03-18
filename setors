@@ -1,0 +1,22 @@
+<section>
+    <div class="shell">
+        <div class="grid-3">
+            ${sectorSolutions.map(s => `
+              <div class="reveal card" style="display: flex; flex-direction: column; overflow: hidden; border-radius: 32px;">
+                <div style="height: 200px; overflow: hidden;">
+                  <img src="${s.img}" alt="${s.sector}" style="width: 100%; height: 100%; object-fit: cover;" />
+                </div>
+                <div style="padding: 32px;">
+                  <div style="color: var(--primary); margin-bottom: 16px;">${ICONS[s.icon]}</div>
+                  <div class="eyebrow" style="margin-bottom: 12px;">${s.sector}</div>
+                  <h3 class="text-xl" style="margin-bottom: 16px;">${s.title}</h3>
+                  <p style="margin-bottom: 24px;">${s.desc}</p>
+                  <ul style="display: grid; gap: 8px;">
+                    ${s.bullets.map(b => `<li style="display: flex; align-items: center; gap: 8px; font-size: 0.85rem; font-weight: 700; color: var(--ink-muted);">${ICONS.check} ${b}</li>`).join('')}
+                  </ul>
+                </div>
+              </div>
+            `).join('')}
+        </div>
+    </div>
+</section>

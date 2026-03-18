@@ -1,5 +1,3 @@
-// src/data/catalogue.ts
-
 export type CatalogueIcon =
   | "scan"
   | "docs"
@@ -44,12 +42,6 @@ export const catalogueGroups = [
   "Formations",
 ] as const;
 
-/**
- * Notes:
- * - ICONS limités à ceux déjà utilisés côté UI (`Icons[it.icon]`)
- * - Chaque item est écrit “grand public” (résultat + livrables implicites)
- * - Images: volontairement variées pour éviter “même image partout”
- */
 export const catalogueItems: CatalogueItem[] = [
   // =========================
   // DIGITALISATION & GED
