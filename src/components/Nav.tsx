@@ -18,7 +18,7 @@ export function Nav({ currentPath }: { currentPath: string }) {
         <div className="globalNav__inner">
           <a href="/" className="topBrand">
             <img 
-              src="/images/Logo.png" 
+              src="/Logo.png" 
               alt="DB Tech Innovation" 
               className="topBrand__logo"
               style={{ height: '64px', width: 'auto', objectFit: 'contain' }}
