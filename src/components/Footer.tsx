@@ -6,9 +6,9 @@ export function Footer() {
         <div className="globalFooter__inner">
           <div className="globalFooter__brand">
             <img 
-              src="/images/logo.png" 
+              src="/images/Logo-blanc.png" 
               alt="DB Tech Innovation" 
-              style={{ height: '180px', width: 'auto', objectFit: 'contain', marginBottom: '40px' }}
+              style={{ height: '100px', width: 'auto', objectFit: 'contain', marginBottom: '40px' }}
             />
             <p className="globalFooter__desc">
               Expertise structurée pour la performance des institutions et des entreprises au Gabon et à l'international.

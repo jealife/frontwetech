@@ -31,13 +31,13 @@ export function Catalogue() {
         <Ticker items={tickerItems} />
       </div>
 
-      <nav style={{ position: 'sticky', top: '100px', zIndex: 50, background: 'rgba(255,255,255,0.8)', backdropFilter: 'blur(12px)', borderBottom: '1px solid var(--line-soft)', padding: '12px 0' }}>
+      {/* <nav style={{ position: 'sticky', top: '100px', zIndex: 50, background: 'rgba(255,255,255,0.8)', backdropFilter: 'blur(12px)', borderBottom: '1px solid var(--line-soft)', padding: '12px 0' }}>
         <div className="shell" style={{ overflowX: 'auto', display: 'flex', gap: '24px', whiteSpace: 'nowrap', fontSize: '0.8rem', fontWeight: 700, textTransform: 'uppercase' }}>
           {catalogueGroups.map(group => (
             <a key={group} href={`#${group.replace(/\s/g, '-')}`} className="nav-link" style={{ opacity: 0.8 }}>{group}</a>
           ))}
         </div>
-      </nav>
+      </nav> */}
 
       {catalogueGroups.map((group, i) => {
         const items = catalogueItems.filter(it => it.group === group);
