@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-export function Nav() {
+export function Nav({ currentPath }: { currentPath: string }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -26,9 +26,9 @@ export function Nav() {
           </a>
 
           <nav className={`globalNav__links ${isOpen ? 'is-open' : ''}`}>
-            <a href="/" className="nav-link" onClick={() => setIsOpen(false)}>Accueil</a>
-            <a href="/catalogue" className="nav-link" onClick={() => setIsOpen(false)}>Catalogue</a>
-            <a href="/solutions" className="nav-link" onClick={() => setIsOpen(false)}>Solutions</a>
+            <a href="/" className={`globalNav__link ${currentPath === '/' ? 'is-active' : ''}`} onClick={() => setIsOpen(false)}>Accueil</a>
+            <a href="/catalogue" className={`globalNav__link ${currentPath === '/catalogue' ? 'is-active' : ''}`} onClick={() => setIsOpen(false)}>Catalogue</a>
+            <a href="/solutions" className={`globalNav__link ${currentPath === '/solutions' ? 'is-active' : ''}`} onClick={() => setIsOpen(false)}>Solutions</a>
             <div className="mobile-only" style={{ marginTop: '20px' }}>
               <a href="mailto:services@dbtech-innovation.com" className="btn btn--primary" style={{ width: '100%' }}>
                 Nous contacter

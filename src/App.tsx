@@ -52,7 +52,7 @@ export default function App() {
 
   return (
     <div className="app-root">
-      <Nav />
+      <Nav currentPath={path} />
       <main>
         <Page />
       </main>
