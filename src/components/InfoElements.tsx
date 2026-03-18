@@ -23,7 +23,7 @@ export function HighlightStrip({ label, items }: { label: string; items: string[
           <h2 className="text-4xl" style={{ marginTop: '20px', fontWeight: 800 }}>Des solutions adaptées à votre <span>secteur</span></h2>
         </div>
         
-        <div style={{ 
+        <div className="highlight-strip-grid" style={{ 
           display: 'grid', 
           gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', 
           gap: '24px',

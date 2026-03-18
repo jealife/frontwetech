@@ -122,6 +122,9 @@ img {
 
 .pageRoot {
   flex-grow: 1;
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
 }
 
 /* Global Nav - Premium Light Theme */
@@ -173,9 +176,53 @@ img {
 
 @media (max-width: 1024px) {
   .globalNav__links {
-    display: none;
+    position: fixed;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 100px);
+    background: white;
+    flex-direction: column;
+    padding: 40px;
+    gap: 32px;
+    transform: translateX(100%);
+    transition: transform 0.4s var(--ease);
+    display: flex; /* Always flex but hidden by transform */
+    z-index: 90;
+    box-shadow: var(--shadow-xl);
+  }
+  
+  .globalNav__links.is-open {
+    transform: translateX(0);
+  }
+  
+  .menu-toggle {
+    display: flex !important;
+  }
+  
+  .globalNav__actions {
+    display: none !important;
   }
 }
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+  z-index: 110;
+}
+
+.menu-toggle span {
+  width: 24px;
+  height: 2px;
+  background-color: var(--primary);
+  transition: all 0.3s var(--ease);
+}
+
+.menu-toggle.is-open span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+.menu-toggle.is-open span:nth-child(2) { opacity: 0; }
+.menu-toggle.is-open span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
 
 .globalNav__link {
   font-weight: 600;
@@ -619,6 +666,10 @@ section {
   }
 }
 
-.animate-fade-up {
-  animation: fadeInUp 0.8s var(--ease) forwards;
+
+@media (max-width: 580px) {
+  .highlight-strip-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 16px !important;
+  }
 }
