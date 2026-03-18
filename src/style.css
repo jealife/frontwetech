@@ -682,6 +682,10 @@ section {
   }
 }
 
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
 
 @media (max-width: 580px) {
   .highlight-strip-grid {

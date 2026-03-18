@@ -69,9 +69,9 @@ export function HighlightStrip({ label, items }: { label: string; items: string[
 export function Ticker({ items }: { items: string[] }) {
   return (
     <div className="ticker-wrap" style={{ overflow: 'hidden', background: 'var(--primary)', padding: '20px 0', color: 'white', borderRadius: 'var(--radius-lg)', marginBottom: '80px' }}>
-      <div className="ticker" style={{ display: 'flex', gap: '60px', whiteSpace: 'nowrap', animation: 'ticker 40s linear infinite' }}>
+      <div className="ticker" style={{ display: 'flex', width: 'max-content', whiteSpace: 'nowrap', animation: 'ticker 40s linear infinite' }}>
         {[...items, ...items].map((item, i) => (
-          <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px', fontWeight: 800, fontFamily: 'var(--font-heading)', textTransform: 'uppercase', letterSpacing: '0.12em', fontSize: '0.8rem' }}>
+          <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px', margin: '0 30px', fontWeight: 800, fontFamily: 'var(--font-heading)', textTransform: 'uppercase', letterSpacing: '0.12em', fontSize: '0.8rem' }}>
             <span style={{ width: '6px', height: '6px', background: 'var(--accent)', borderRadius: '50%' }}></span>
             {item}
           </div>

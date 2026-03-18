@@ -27,7 +27,7 @@ export function Catalogue() {
         icons={ICONS}
       />
       
-      <div className="shell" style={{ marginTop: '-40px', position: 'relative', zIndex: 10 }}>
+      <div className="shell" style={{ marginTop: '-40px', paddingLeft: '20px', paddingRight: '20px', position: 'relative', zIndex: 10 }}>
         <Ticker items={tickerItems} />
       </div>
 
