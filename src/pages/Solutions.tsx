@@ -35,7 +35,7 @@ export function Solutions() {
             title="Une approche adaptée à vos réalités"
             centered
           />
-          <div className="grid-3" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '32px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: '32px' }}>
             {sectorSolutions.map((s, i) => (
               <div key={i} className="reveal card" style={{ display: 'flex', flexDirection: 'column', overflow: 'hidden', borderRadius: '32px' }}>
                 <div style={{ height: '200px', overflow: 'hidden' }}>
