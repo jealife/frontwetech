@@ -6,6 +6,8 @@ import { Catalogue } from './pages/Catalogue';
 import { Solutions } from './pages/Solutions';
 import { attachReveal } from './ui/reveal';
 
+import { FloatingActions } from './components/FloatingActions';
+
 export default function App() {
   const [path, setPath] = useState(window.location.pathname);
 
@@ -55,6 +57,7 @@ export default function App() {
         <Page />
       </main>
       <Footer />
+      <FloatingActions />
     </div>
   );
 }
