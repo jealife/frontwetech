@@ -42,7 +42,7 @@ export function FloatingActions() {
 
       {/* Bouton Appel Direct */}
       <a 
-        href="tel:+241074444444" 
+        href="tel:+24102055501" 
         className="fab fab--call" 
         title="Nous appeler"
         style={{ 

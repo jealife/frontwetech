@@ -28,7 +28,7 @@ export function Footer() {
             <h4 className="globalFooter__title">Contact</h4>
             <nav className="globalFooter__links">
               <a href="mailto:services@dbtech-innovation.com" className="footer-link">services@dbtech-innovation.com</a>
-              <a href="tel:+24101100000" className="footer-link">+241 01 10 00 00</a>
+              <a href="tel:+24102055501" className="footer-link">+241 02 05 55 01</a>
             </nav>
           </div>
 
