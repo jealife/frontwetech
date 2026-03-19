@@ -21,7 +21,7 @@ export const metadata = {
     template: "%s | DB Tech Innovation"
   },
   description: "Expertise structurée pour la performance des institutions et des entreprises au Gabon. Digitalisation GED, Workflows métiers et Tableaux de bord stratégiques.",
-  metadataBase: new URL('https://dbtech-innovation.com'), // Placeholder URL, should match actual domain
+  metadataBase: new URL('https://dbtech-innovation.com'),
   alternates: {
     canonical: '/',
   },
@@ -37,10 +37,16 @@ export const metadata = {
     card: 'summary_large_image',
     title: "DB Tech Innovation",
     description: "Expertise digitale premium au Gabon.",
+    images: [
+      {
+        url: '/Logo.png',
+        alt: 'DB Tech Innovation Logo',
+      },
+    ],
   },
   icons: {
-    icon: '/Logo.png', // Assuming Logo.png is also used as icon, or replace with actual favicon.ico
-    apple: '/Logo.png',
+    icon: '/favicon.ico',
+    apple: '/favicon.ico',
   },
 };
 
