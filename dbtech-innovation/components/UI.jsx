@@ -13,7 +13,8 @@ export function SectionHeader({ eyebrow, title, desc, centered = false }) {
 
 export function FeatureCard({ icon, title, desc }) {
   return (
-    <div className="reveal card">
+    <div className="reveal card" style={{ position: 'relative', overflow: 'hidden' }}>
+      <div className="tech-decor tech-shape" style={{ top: '-10px', right: '-10px', opacity: 0.1 }}></div>
       <div className="card__icon">
         {typeof icon === 'string' ? (
           <div dangerouslySetInnerHTML={{ __html: icon }} />

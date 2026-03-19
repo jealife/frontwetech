@@ -25,7 +25,8 @@ const SECTOR_ICONS = {
 
 export function HighlightStrip({ label, items }) {
   return (
-    <section className="highlight-strip" style={{ padding: '100px 0', background: 'var(--bg-soft)' }}>
+    <section className="highlight-strip" style={{ position: 'relative', overflow: 'hidden', padding: '100px 0', background: 'var(--bg-soft)' }}>
+      <div className="tech-grid"></div>
       <div className="shell">
         <div className="reveal" style={{ textAlign: 'center', marginBottom: '60px' }}>
           <span className="eyebrow" style={{ marginInline: 'auto' }}>
@@ -79,7 +80,7 @@ export function HighlightStrip({ label, items }) {
 
 export function Ticker({ items }) {
   return (
-    <div className="ticker-wrap" style={{ overflow: 'hidden', background: 'var(--primary)', padding: '20px 0', color: 'white', borderRadius: 'var(--radius-lg)', marginBottom: '80px' }}>
+    <div className="ticker-wrap glass-ticker" style={{ overflow: 'hidden', padding: '20px 0', color: 'white', borderRadius: 'var(--radius-lg)', marginBottom: '80px' }}>
       <div className="ticker" style={{ display: 'flex', width: 'max-content', whiteSpace: 'nowrap', animation: 'ticker 40s linear infinite' }}>
         {[...items, ...items].map((item, i) => (
           <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px', margin: '0 30px', fontWeight: 800, fontFamily: 'var(--font-heading)', textTransform: 'uppercase', letterSpacing: '0.12em', fontSize: '0.8rem' }}>

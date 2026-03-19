@@ -15,6 +15,10 @@ export function HeroSection({ eyebrow, title, desc, image, icons }) {
             </div>
           </div>
           <div className="hero__visual reveal scale-in">
+            {/* Tech Decor Background */}
+            <div className="tech-decor glow-blue" style={{ top: '-15%', right: '-15%', opacity: 0.6 }}></div>
+            <div className="tech-decor glow-yellow" style={{ bottom: '-10%', left: '-10%', opacity: 0.4 }}></div>
+            
             <div className="hero__image-wrapper">
               <img src={image} alt="DB Tech Achievement" />
             </div>
@@ -34,6 +38,13 @@ export function HeroSection({ eyebrow, title, desc, image, icons }) {
                 <div className="text-xs text-muted">IA Native</div>
               </div>
             </div>
+
+            {/* Tech nodes & lines */}
+            <div className="tech-decor tech-line" style={{ top: '20%', left: '-15%', width: '130%', opacity: 0.3, transform: 'rotate(-4deg)' }}></div>
+            <div className="tech-decor tech-node" style={{ top: '20%', left: '-2%' }}></div>
+            <div className="tech-decor tech-node" style={{ bottom: '30%', right: '0' }}></div>
+            <div className="tech-decor tech-shape" style={{ top: '10%', left: '-8%', borderStyle: 'double', opacity: 0.6 }}></div>
+            <div className="tech-decor tech-shape" style={{ bottom: '20%', right: '-5%', opacity: 0.5 }}></div>
           </div>
         </div>
       </div>

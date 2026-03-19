@@ -67,8 +67,9 @@ export default function Home() {
                 <li style={{ display: 'flex', alignItems: 'center', gap: '8px', fontWeight: 600, fontSize: '0.9375rem' }}><span style={{ color: 'var(--primary)' }} dangerouslySetInnerHTML={{ __html: ICONS.check }}></span>Sécurité</li>
               </ul>
             </div>
-            <div className="reveal slide-right">
-              <div style={{ borderRadius: 'var(--radius-xl)', overflow: 'hidden', boxShadow: 'var(--shadow-lg)' }}>
+            <div className="reveal slide-right" style={{ position: 'relative' }}>
+              <div className="tech-decor glow-blue" style={{ top: '-40px', right: '-40px', opacity: 0.4 }}></div>
+              <div style={{ position: 'relative', borderRadius: 'var(--radius-xl)', overflow: 'hidden', boxShadow: 'var(--shadow-lg)', zIndex: 1 }}>
                 <img src="/images/backgrounds/thinking-promising-project.jpg" alt="Organisation" />
               </div>
             </div>

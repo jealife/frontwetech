@@ -62,7 +62,7 @@ export function FloatingActions() {
         className={`fab fab--top ${isVisible ? 'is-visible' : ''}`}
         title="Retour en haut"
         style={{ 
-          width: '56px', height: '56px', borderRadius: '50%', background: 'white', border: '1px solid var(--line-soft)', color: 'var(--primary)', display: 'grid', placeItems: 'center', boxShadow: '0 8px 24px var(--shadow-color)', transition: 'all 0.4s var(--ease)', cursor: 'pointer', opacity: isVisible ? 1 : 0, transform: `translateY(${isVisible ? '0' : '20px'})`, pointerEvents: isVisible ? 'all' : 'none' 
+          width: '56px', height: '56px', borderRadius: '50%', background: 'rgba(255,255,255,0.7)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255, 255, 255, 0.8)', color: 'var(--primary)', display: 'grid', placeItems: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.08)', transition: 'all 0.4s var(--ease)', cursor: 'pointer', opacity: isVisible ? 1 : 0, transform: `translateY(${isVisible ? '0' : '20px'})`, pointerEvents: isVisible ? 'all' : 'none' 
         }}
       >
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
