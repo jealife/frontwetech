@@ -346,17 +346,18 @@ img {
 
 .hero__floating-card {
   position: absolute;
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.8);
+  background: #ffffffe8;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
   padding: 12px 18px;
   border-radius: var(--radius-lg);
-  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.08); /* Glass shadow */
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
   display: flex;
   align-items: center;
   gap: 12px;
   z-index: 10;
+  transition: transform 0.3s var(--ease);
 }
 
 .hero__floating-card .card__icon {
@@ -698,6 +699,15 @@ section {
   }
 }
 
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
 @keyframes ticker {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
@@ -732,6 +742,8 @@ section {
   border: 4px solid rgba(var(--primary-rgb), 0.15); /* Thicker border */
   transform: rotate(45deg);
   border-style: double; /* logo style influence perhaps? */
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(4px);
 }
 
 .tech-grid {
