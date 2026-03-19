@@ -39,7 +39,7 @@ export const metadata = {
     description: "Expertise digitale premium au Gabon.",
   },
   icons: {
-    icon: '/Logo.png', // Assuming Logo.png is also used as icon, or replace with actual favicon.ico
+    icon: '/favicon.ico',
     apple: '/Logo.png',
   },
 };
