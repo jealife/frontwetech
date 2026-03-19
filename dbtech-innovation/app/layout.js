@@ -37,10 +37,16 @@ export const metadata = {
     card: 'summary_large_image',
     title: "DB Tech Innovation",
     description: "Expertise digitale premium au Gabon.",
+    images: [
+      {
+        url: '/Logo.png',
+        alt: 'DB Tech Innovation Logo',
+      },
+    ],
   },
   icons: {
     icon: '/favicon.ico',
-    apple: '/Logo.png',
+    apple: '/favicon.ico',
   },
 };
 
