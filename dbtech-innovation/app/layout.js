@@ -21,7 +21,7 @@ export const metadata = {
     template: "%s | DB Tech Innovation"
   },
   description: "Expertise structurée pour la performance des institutions et des entreprises au Gabon. Digitalisation GED, Workflows métiers et Tableaux de bord stratégiques.",
-  metadataBase: new URL('https://dbtech-innovation.com'), // Placeholder URL, should match actual domain
+  metadataBase: new URL('https://dbtech-innovation.com'),
   alternates: {
     canonical: '/',
   },
