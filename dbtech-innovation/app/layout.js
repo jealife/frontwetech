@@ -21,14 +21,14 @@ export const metadata = {
     template: "%s | DB Tech Innovation"
   },
   description: "Expertise structurée pour la performance des institutions et des entreprises au Gabon. Digitalisation GED, Workflows métiers et Tableaux de bord stratégiques.",
-  metadataBase: new URL('https://dbtech-innovation.com'),
+  metadataBase: new URL('https://dbtech-innovation.vercel.app/'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: "DB Tech Innovation | Architecture Digitale Premium",
     description: "Transformation digitale premium pour les institutions et entreprises au Gabon.",
-    url: 'https://dbtech-innovation.com',
+    url: 'https://dbtech-innovation.vercel.app/',
     siteName: 'DB Tech Innovation',
     locale: 'fr_FR',
     type: 'website',
